@@ -195,7 +195,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7516241580824522416}
   - component: {fileID: 8540114918962480239}
-  - component: {fileID: 7347006069061240951}
   m_Layer: 0
   m_Name: HealthBar
   m_TagString: Untagged
@@ -276,19 +275,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &7347006069061240951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5032092066594239863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f088fc8d13d6bb941b3d8a621d94f990, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 8540114918962480239}
 --- !u!1 &6596282390311375176
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,7 +287,9 @@ GameObject:
   - component: {fileID: 6596282390311375181}
   - component: {fileID: 6596282390311375178}
   - component: {fileID: 6596282390311375179}
-  - component: {fileID: 514914200837974421}
+  - component: {fileID: 1486794829426616813}
+  - component: {fileID: 3206814613548696125}
+  - component: {fileID: 3751378653647244516}
   m_Layer: 0
   m_Name: EnemyCube
   m_TagString: Enemy
@@ -388,7 +376,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &514914200837974421
+--- !u!114 &1486794829426616813
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -400,11 +388,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 253f664b8a5c7fb4183d4994af1f2893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyHealth: {fileID: 149374050331945002}
   damages: 20
-  maxHealth: 100
-  health: 0
-  healthBar: {fileID: 7347006069061240951}
+--- !u!114 &3206814613548696125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6596282390311375176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3382ff82e56e83744bbb2c60fe086506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Healthslider: {fileID: 8540114918962480239}
+--- !u!114 &3751378653647244516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6596282390311375176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6cae0ea474c914a9897e4d1afa68be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _StartingHealth: 100
+  currentHealth: 0
+  damages: 10
+  healthBar: {fileID: 0}
 --- !u!1 &7948531596230285824
 GameObject:
   m_ObjectHideFlags: 0

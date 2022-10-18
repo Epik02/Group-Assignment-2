@@ -13,11 +13,11 @@ public class Movement : MonoBehaviour
     public GameObject Character;
 
     //Health Testing
-    public int maxHealth = 100;
-    public int currentHealth;
-    public int damages = 0;
+    //public int maxHealth = 100;
+    //public int currentHealth;
+    //public int damages = 0;
 
-    public HealthBar healthBar;
+    //public HealthBar healthBar;
     
 
     //Player Movement from Unity Asset for Testing
@@ -44,20 +44,20 @@ public class Movement : MonoBehaviour
             instance = this;
         }
 
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
+        //currentHealth = maxHealth;
+        //healthBar.SetMaxHealth(maxHealth);
 
         inputAction = new PlayerAction();
 
         inputAction.Player.ReloadScene.performed += cntxt => Reload();
-        inputAction.Player.Damage.performed += cntxt => TakeDamage(damages);
+        //inputAction.Player.Damage.performed += cntxt => TakeDamage(damages);
     }
     //taking damage
-    public void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
-    }
+    //public void TakeDamage(int damage)
+    //{
+    //    currentHealth -= damage;
+    //    healthBar.SetHealth(currentHealth);
+    //}
 
     public void Reload()
     {
@@ -76,9 +76,9 @@ public class Movement : MonoBehaviour
             SceneManager.LoadScene(0);
         }
 
-        if (healthBar.GetHealth() <= 0)
-        {
-            SceneManager.LoadScene(0);
-        }
+       // if (healthBar.GetHealth() <= 0)
+        //{
+          //  SceneManager.LoadScene(0);
+       // }
     }
 }

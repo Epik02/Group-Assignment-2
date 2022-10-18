@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3668274454710574847}
   - component: {fileID: 1388147498453232300}
-  - component: {fileID: 9016089917849923960}
   m_Layer: 0
   m_Name: HealthBar
   m_TagString: Untagged
@@ -91,19 +90,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &9016089917849923960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 657297644580160428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f088fc8d13d6bb941b3d8a621d94f990, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  slider: {fileID: 1388147498453232300}
 --- !u!1 &878230000788451091
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,7 +479,9 @@ GameObject:
   - component: {fileID: 8863631402175366272}
   - component: {fileID: 8863631402175366275}
   - component: {fileID: 8863631402175366274}
-  - component: {fileID: 6511786383141478565}
+  - component: {fileID: 1915714190103929876}
+  - component: {fileID: 6532438475767705706}
+  - component: {fileID: 1213507471815587997}
   m_Layer: 0
   m_Name: EnemyAir
   m_TagString: Enemy
@@ -580,7 +568,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6511786383141478565
+--- !u!114 &1915714190103929876
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -592,8 +580,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 253f664b8a5c7fb4183d4994af1f2893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemyHealth: {fileID: 6048737956514799964}
   damages: 20
-  maxHealth: 100
-  health: 0
-  healthBar: {fileID: 9016089917849923960}
+--- !u!114 &6532438475767705706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8863631402175366333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6cae0ea474c914a9897e4d1afa68be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _StartingHealth: 100
+  currentHealth: 0
+  damages: 0
+  healthBar: {fileID: 0}
+--- !u!114 &1213507471815587997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8863631402175366333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3382ff82e56e83744bbb2c60fe086506, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Healthslider: {fileID: 1388147498453232300}
