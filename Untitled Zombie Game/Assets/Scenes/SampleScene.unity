@@ -918,7 +918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3ab1cc0976c53049ac8e8bc03c92679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Object: {fileID: 0}
+  Object: {fileID: 1942243916}
 --- !u!65 &711657250
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2245,5 +2245,10 @@ CanvasRenderer:
 --- !u!4 &1942243915 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6180304175192997677, guid: 05d9ff241c6eb2c459bf7f7fa1b7d14b, type: 3}
+  m_PrefabInstance: {fileID: 1810326199}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &1942243916 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6180304175192997667, guid: 05d9ff241c6eb2c459bf7f7fa1b7d14b, type: 3}
   m_PrefabInstance: {fileID: 1810326199}
   m_PrefabAsset: {fileID: 0}
