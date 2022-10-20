@@ -1,0 +1,10 @@
+﻿  pch.cpp
+  dllmain.cpp
+C:\Users\EpikG\source\repos\GameDll1\GameDll2\dllmain.cpp(35,12): warning C4244: 'return': conversion from 'FLOAT' to 'INT', possible loss of data
+C:\Users\EpikG\source\repos\GameDll1\GameDll2\dllmain.cpp(39,18): warning C4305: 'initializing': truncation from 'double' to 'FLOAT'
+     Creating library C:\Users\EpikG\source\repos\GameDll1\x64\Release\GameDll2.lib and object C:\Users\EpikG\source\repos\GameDll1\x64\Release\GameDll2.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 6 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  GameDll2.vcxproj -> C:\Users\EpikG\source\repos\GameDll1\x64\Release\GameDll2.dll
