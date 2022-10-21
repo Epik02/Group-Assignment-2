@@ -25,6 +25,35 @@ public class DLLStuff : MonoBehaviour
     [DllImport("GameDLL1 1.dll")]
     private static extern float SubtractFloats(float x, float y);
 
+    [DllImport("Plugin2.dll")]
+
+    public static extern int GetWaveCount(string fileName);
+
+    [DllImport("Plugin2.dll")]
+
+    private static extern void NewWave();
+
+    [DllImport("Plugin2.dll")]
+
+    private static extern void ResetWave();
+
+    [DllImport("Plugin2.dll")]
+
+    private static extern void UpdateFile(string fileName);
+
+    [DllImport("Plugin2.dll")]
+
+    private static extern void ResetFule(string fileName);
+
+    [DllImport("Plugin2.dlll")]
+
+    private static extern void OpenFile(string fileName);
+
+    [DllImport("Plugin2.dll")]
+
+    private static extern void CloseFile();
+
+
     //[DllImport("GameDLL2.dll")]
     //private static extern void ReturnClassInstance(StringBuilder instance);
 
