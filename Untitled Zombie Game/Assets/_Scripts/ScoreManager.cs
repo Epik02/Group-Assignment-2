@@ -9,7 +9,7 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
     public TMP_Text ChangingText;
-    int score = 0;
+    public int score = 0;
     // Start is called before the first frame update
     void Awake()
     {

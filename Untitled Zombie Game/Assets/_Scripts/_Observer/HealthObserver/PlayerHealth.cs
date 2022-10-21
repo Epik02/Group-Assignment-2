@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class Health : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
     //This is a generic health class and in this example will be used as a subject for the observer pattern.
 
@@ -19,10 +19,9 @@ public class Health : MonoBehaviour
     public int StartingHealth => _StartingHealth;
 
     public int currentHealth = 100;
-    
+
     public int damages = 0;
     public SavePlugin save;
-    public bool isPlayer = false;
 
     //Player/Enemy Health Bar
     public HealthBar healthBar;
@@ -40,10 +39,7 @@ public class Health : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            if (isPlayer == true)
-            {
-                save.SaveItems();
-            }
+            save.SaveItems();
             Destroy(gameObject);
         }
     }
